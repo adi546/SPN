@@ -1,0 +1,3 @@
+CREATE INDEX IDX_TB_PriceMaster_Search 
+ON TB_PriceMaster (CompanyCode, Condition_Table, Material_Description)
+INCLUDE (Material_Number, Condition_Amount, Condition_Type);
